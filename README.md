@@ -24,7 +24,7 @@ This produces `libs/libecg_producer.a` and object files under `obj/static/`.
 - As a git submodule (recommended):
 
 ```bash
-git submodule add https://github.com/Tr0ph1c/cpp-ecg-streamer path/to/cpp-ecg-streamer
+git submodule add https://github.com/ahmniab/ecg-producer-cpp-client path/to/cpp-ecg-streamer
 git submodule update --init --recursive
 ```
 
