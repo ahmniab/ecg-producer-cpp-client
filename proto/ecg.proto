@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package ecg;
+
+service ECGService {
+  rpc StreamECG(stream ECGSample) returns (StreamAck);
+}
+
+message ECGSample {
+  int64 timestamp = 1;
+  float voltage = 2;
+}
+
+message StreamAck {
+  uint64 received_samples = 1;
+}
